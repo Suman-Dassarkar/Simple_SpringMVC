@@ -23,6 +23,11 @@ public class UserDAO {
         return query.getResultList();
     }
 	
+	public User getUserById(int userId) {
+		User user = em.find(User.class, userId);
+		return user;
+	}
+	
 	@Transactional
 	public void delete(int userId) {
 		User user = em.getReference(User.class, userId);

@@ -19,6 +19,10 @@ public class UserService {
 		return userDAO.getAllUsers();
 	}
 	
+	public User getUserById(int userId) {
+		return userDAO.getUserById(userId);
+	}
+	
 	public void save(User aUser) {
 		userDAO.save(aUser);
 	}

@@ -1,4 +1,5 @@
-C:\Users\daski\Desktop\MyProjects\Suman_Spring_Project\userManager\src\main\java\com\devcases\usermanager\model\User.java
-C:\Users\daski\Desktop\MyProjects\Suman_Spring_Project\userManager\src\main\java\com\devcases\usermanager\service\UserService.java
-C:\Users\daski\Desktop\MyProjects\Suman_Spring_Project\userManager\src\main\java\com\devcases\usermanager\dao\UserDAO.java
-C:\Users\daski\Desktop\MyProjects\Suman_Spring_Project\userManager\src\main\java\com\devcases\usermanager\web\UserController.java
+C:\Users\daski\Desktop\MyProjects\Suman_Spring_Project\Simple_SpringMVC\userManager\src\main\java\com\devcases\usermanager\config\RESTConfiguration.java
+C:\Users\daski\Desktop\MyProjects\Suman_Spring_Project\Simple_SpringMVC\userManager\src\main\java\com\devcases\usermanager\dao\UserDAO.java
+C:\Users\daski\Desktop\MyProjects\Suman_Spring_Project\Simple_SpringMVC\userManager\src\main\java\com\devcases\usermanager\web\UserController.java
+C:\Users\daski\Desktop\MyProjects\Suman_Spring_Project\Simple_SpringMVC\userManager\src\main\java\com\devcases\usermanager\service\UserService.java
+C:\Users\daski\Desktop\MyProjects\Suman_Spring_Project\Simple_SpringMVC\userManager\src\main\java\com\devcases\usermanager\model\User.java

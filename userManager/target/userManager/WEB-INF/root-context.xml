@@ -57,7 +57,47 @@
     		class="org.springframework.orm.jpa.JpaTransactionManager">
         <property name="entityManagerFactory" ref="entityManagerFactory" />
     </bean>
- 
+    
+    
+    <bean class="org.springframework.web.servlet.view.ContentNegotiatingViewResolver">
+  <property name="order" value="1" />
+  <property name="mediaTypes">
+    <map>
+       <entry key="json" value="application/json" />
+       <entry key="xml" value="application/xml" />
+    </map>
+  </property>
+
+  <property name="defaultViews">
+    <list>
+      <!-- JSON View -->
+      <bean
+        class="org.springframework.web.servlet.view.json.MappingJackson2JsonView">
+      </bean>
+
+      <!-- JAXB XML View -->
+      <bean class="org.springframework.web.servlet.view.xml.MarshallingView">
+        <constructor-arg>
+            <bean class="org.springframework.oxm.jaxb.Jaxb2Marshaller">
+               <property name="classesToBeBound">
+                <list>    
+                   <value>com.rest.dto.SportInfoDtoList</value>
+                </list>
+               </property>
+            </bean>
+        </constructor-arg>
+      </bean>
+     </list>
+  </property>
+  <property name="ignoreAcceptHeader" value="true" />
+
+</bean>
+    
+ 	
+ 	<!-- JSON Support -->
+    <bean name="viewResolver" class="org.springframework.web.servlet.view.BeanNameViewResolver"/>
+    <bean name="jsonTemplate" class="org.springframework.web.servlet.view.json.MappingJackson2JsonView"/>
+ 	
     <tx:annotation-driven transaction-manager="transactionManager" />
 		
 </beans>
